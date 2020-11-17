@@ -1,0 +1,16 @@
+<h2>Your Movies</h2>
+{{#each movieList}}
+Title: {{title}}
+Genre: {{genre}}
+Plot: {{plot}}
+<ul>
+  <li>works</li>
+  {{#each cast}}
+  <li>
+    {{name}}
+  </li>
+  {{/each}}
+</ul>
+<a href="">Edit this Movie</a>
+<a href="/celebrities/delete/{{_id}}">Delet this Movie</a>
+{{/each}}
